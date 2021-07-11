@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta charset="utf-8">
+  
+  <link rel="stylesheet" type="text/css" href="robotpane1.css">
+  <title>Robot Control</title>
+</head>
+<body> 
+
+   <form method="POST" action="rrr.php" >
+    <table>      
+      <tr>
+         <th colspan="3">
+               <h1>Robot Control</h1> 
+         </th>
+      </tr>
+      <tr>
+         <td colspan="3"><center><button name="Fo" type="submit" class="btn1">forward</button></center></td>
+      </tr>
+       <tr>
+         <td><button name="Le" type="submit" class="btn1">left</button></td> 
+         <td><button name="St" type="submit" class="btn1">stop</button></td>
+         <td><button name="Ri" type="submit" class="btn1">right</button></td>
+      </tr>
+      <tr>
+        <td colspan="3"><center><button name="Ba" type="submit" class="btn1" >backard</button></center></td> 
+       
+       </tr>
+      </table>
+</form>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "aa435361-b241-4e7c-b1c2-610f98b396ea", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "e75f4a0f-a0f7-427c-bd89-be63b95fb631", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+</body>
+</html>
